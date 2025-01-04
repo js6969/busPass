@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    /* Shadow effect added */
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    color: #00A2A5;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.libre-bodoni-uniquifier {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 10px;
+}
+
+.divider {
+    margin: 10px auto;
+    width: 100%;
+    height: 3px;
+    background-color: #cccccc;
+    opacity: 60%;
+    box-shadow: #000000;
+    /* Divider between heading and pass */
+}
+
+.line {
+    margin: 10px auto;
+    width: 100%;
+    height: 1px;
+    background-color: #00A2A5;
+    /* opacity: 60%; */
+    /* box-shadow: #000000; */
+    /* Divider between heading and pass */
+}
+
+.bus-pass {
+    padding: 1px;
+    background-image: url('dtc-watermark.jpeg');
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.95;
+}
+
+.bus-pass h2 {
+    color: #43BCBC;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.profile-section {
+    text-align: center;
+    
+}
+
+.user-photo {
+    width: 70px;
+    height: 80px;
+    border: 2px solid #cccccc;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow effect for photo */
+}
+
+.user-info p {
+    margin: 5px 0;
+    font-size: 10px;
+}
+
+.info-section p {
+    margin: 10px 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+.pass-number {
+    color: #7BBD65;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 1;
+        /* Fully visible */
+    }
+
+    50% {
+        opacity: 0;
+        /* Fully invisible */
+    }
+}
+
+#bus-pass {
+    animation: fadeInOut 3s infinite;
+    /* 3-second cycle */
+}
+
+.date {
+    color: #CF1C1B;
+    font-size: 9px;
+}
+
+.signature-qr-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.bordered {
+    flex: 1;
+    /* Makes both sections equal in width */
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    /* Includes padding in width/height calculations */
+}
+
+.signature.bordered {
+    border-right: 1px solid #cccccc;
+    /* Vertical line between sections */
+}
+
+.signature-qr-section::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    /* Horizontal line across the section */
+    /* transform: translateY(0%); */
+}
+
+.signature {
+    text-align: center;
+    width: 45%;
+    font-size: 5px;
+    line-height: 0.01;
+}
+
+.signature-box {
+    /* border: 2px dashed #000; */
+    /* height: px; */
+    margin-bottom: 5px;
+}
+
+.signature-box #sign {
+    height: 40px;
+    width: 40px;
+}
+
+#official {
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.qr-section {
+    margin-top: 2px;
+    width: 45%;
+    text-align: center;
+}
+
+.qr-code {
+    width: 40px;
+    height: 40px;
+}
+
+.just-before-footer {
+    height: 40px;
+    background-color: #D9EEEF;
+}
+
+footer {
+    background-color: #00A2A5;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    height: 80px;
+}
+
+footer p {
+    margin: 30px;
+    font-size: 10px;
+}
